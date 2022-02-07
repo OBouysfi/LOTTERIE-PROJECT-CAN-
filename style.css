@@ -1,0 +1,500 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-image: url('images/IMG_1612.JPG');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	box-sizing: border-box;
+	background-size: cover;
+	overflow-x: hidden;
+}
+header{
+	padding-top: 2vw;
+	color: white;
+	font-size: 7vw;
+	font-family: calibri;
+	text-shadow: 1px 1px 85px black;
+	width: 100vw;
+	text-align: center;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+section{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background: rgba(10,10,10,0.9);
+		
+}
+.page{
+	text-align:center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	overflow-y: auto;
+	transition: all 0.32s ease;
+}
+.page1{
+
+}
+.page2{
+
+}
+.page3{
+
+}
+.page4{
+
+}
+.titre::after{
+	content: "";
+	display: block;
+	height: 1px;
+	margin: 2vw auto;
+	box-shadow: 0px 0px 2px 2px white;
+	width: 5vw;
+	background: white;
+}
+.titre{
+	color: white;
+	font-size: 4vw;
+	font-family: century gothic;
+	font-weight: 100;
+	margin: 2vw;
+}
+.bloc-connexion{
+	display: inline-block;
+	margin: 10vw auto;
+	background: rgba(255,255,255,0.5);
+	width: 25vw;
+	overflow: hidden;
+	border-radius: 0.2vw;
+	padding: 2vw;
+	position: relative;
+	text-align: center;
+	box-shadow: 0px 0px 10px white;
+}
+.bloc-connexion h2{
+	color: white;
+	font-size: 2.3vw;
+	font-family: century gothic;
+	font-weight: 100;
+	margin-bottom: 2vw;
+}
+.bloc-connexion input{
+	padding: 1vw;
+	width: 90%;
+	margin: 1vw auto;
+}
+.bloc-connexion .btn{
+	color: white;
+	background-color: forestgreen;
+	width: 50%;   
+	font-size: 1vw;
+	border: 2px solid forestgreen;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.6s ease;
+}
+.bloc-connexion .btn:hover{
+	background: white;
+	color:forestgreen;
+}
+.err.red{
+	display: none;
+	border: 1px solid red;
+	padding: 5px;
+	border-radius: 3px;
+	color: red;
+	width: 95%;
+	font-family: century gothic;
+	font-weight: 100;
+}
+
+/*La page 2*/
+
+.main .champs{
+	padding: 10px;
+}
+.main .champs .champ{
+	padding: 0.5vw;
+	width: 40vw;
+	border: 1px solid white;
+	height: 3.1vw;
+}
+.main .champs .btn{
+	background: forestgreen;
+	height: 3.2vw;
+	color: white;
+	border: 2px solid forestgreen;
+	cursor: pointer;
+	min-width: 10vw;
+	transition: all 0.2s ease;
+}
+.main .champs .btn:hover{
+	background: white;
+	color: green;
+	cursor: pointer;
+}
+.main .equipe-list{
+	width: 100%;
+	min-height: 100px;
+	padding: 20px;
+}
+.main h2{
+	color: white;
+	font-family: century gothic;
+	font-weight: 100;
+	margin: 2vw;
+}
+.main .equipes{
+	padding: 1vw 0.2vw;
+	padding-right: 1.2vw;
+}
+@keyframes ouverture{
+	0%{
+		height: 0;
+	}
+	100%{
+		height: 3vw;
+	}
+}
+.main .equipes div{
+	animation: ouverture 0.23s ease;
+	background: #afa;
+	margin: 2vw;
+	overflow: hidden;
+	display: inline-flex;
+	justify-content: space-between;
+	width: 20vw;
+	border-radius: 1px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 2px;
+}
+.main .equipes div h4{
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 1vw;
+	color: #111;
+	font-family: calibri;
+	background: orange;
+	width: 100%;
+	background: rgba(250,250,250,0.5);
+}
+.main .equipes div img{
+	width: 22%;   
+	height: 3.6vw;   
+	display: inline-block;
+	vertical-align: middle;
+}
+.main .equipes div button:hover{
+	background: forestgreen;
+	color: white;
+}
+.main .equipes div button{
+	transition: all 0.2s ease;
+	width: 20%;
+	font-size: 20px;
+	cursor: pointer;
+	border: none;
+	border-left: 1px solid green;
+}
+
+/*page 3*/
+.main2{
+	overflow-y: auto;
+}
+.main2 .poule{
+	position: relative;
+	background: rgba(200,200,200,0.5);
+	width: 30vw;
+	min-height: 60vh;
+	margin: 2vw;
+	border-radius: 5px;
+	overflow: hidden;
+	display: inline-block;
+	box-shadow: 0px 0px 10px #222;
+}
+.main2 .poule .btn:hover{
+	background: #444;
+	color: white;
+}
+.main2 .poule .btn{
+	width: 100%;
+	height: 7vh;
+	transition: all 0.3s ease;
+	font-size: 1.2vw;
+	display: inline-block;
+	bottom: 0;
+	left: 0;
+	cursor: pointer;
+	border: none;
+	border-top: 2px solid black;
+	position: absolute;
+	background: transparent;
+	color: black;
+}
+.main2 .poule .title{
+	background: green;
+	color: #ddd;
+	font-family: calibri;
+	padding: 20px;
+}
+div.nul::after{
+	content: "Nul";
+	position: absolute;
+	background: rgba(12,100,12,0.8);
+	color: white;
+	text-align: center;
+	padding: 0.7vw;
+	border: 2px dashed white;
+	font-size: 18px;
+	font-family: century gothic;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+div.selected::after{
+	content: "A gagné";
+	position: absolute;
+	background: rgba(12,100,12,0.8);
+	color: white;
+	text-align: center;
+	padding: 0.7vw;
+	border: 2px dashed white;
+	font-size: 18px;
+	font-family: century gothic;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+.main2 .pays div{
+	position: relative;
+	animation: ouverture 0.23s ease;
+	background-color: transparent;
+	margin: 1vw;
+	overflow: hidden;
+	display: inline-flex;
+	justify-content: space-between;
+	width: 80%;
+	border-radius: 1px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 2px;
+}
+.main2 .pays  div h4{
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 1vw;
+	color: #111;
+	font-family: calibri;
+	background: orange;
+	width: 100%;
+	background: rgba(250,250,250,0.5);
+	background: rgba(250,250,250,0.1);
+}
+.main2 .pays  div img{
+	width:25%;   
+	height:100%;   
+	display: inline-block;
+	vertical-align: middle;
+}
+.main2 .pays div button:hover{
+	background: forestgreen;
+	color: white;
+}
+.main2 .pays div button{
+	transition: all 0.2s ease;
+	width: 20%;
+	font-size: 20px;
+	cursor: pointer;
+	border: none;
+	border-left: 1px solid green;
+}
+.btn{
+	background: forestgreen;
+	height: 3.5vw;
+	padding: 1px 3vw;
+	margin-bottom: 3vw;
+	color: white;
+	border: 2px solid forestgreen;
+	cursor: pointer;
+	min-width: 10vw;
+	transition: all 0.2s ease;
+}
+.btn:hover{
+	background: white;
+	color: green;
+	cursor: pointer;
+}
+.calendrier .journees {
+	margin: 2vw;
+	padding: 0.8vw;
+}
+.quarts .quarts, .demis .demis, .finale .finale {
+	display: inline-block;
+	width: 95vw;
+}
+.quarts .quarts .journee, .demis .demis .journee, .finale .finale .journee  {
+	background: white;
+	margin: 1vw;
+	padding: 0.8vw;
+	box-shadow: 0px 0px 5px #aaa;
+	width: 40vw;
+	display: inline-block;
+}
+.finale .finale .journee{
+	width: 90vw;
+}
+.calendrier .journees .journee{
+	background: white;
+	margin: 2vw;
+	padding: 0.8vw;
+	box-shadow: 0px 0px 5px #aaa;
+	display: inline-block;
+	width: 40vw;
+}
+.calendrier .journees .journee h1, .quarts .quarts .journee h1, .demis .demis .journee h1, .finale .finale .journee  h1{
+	font-family: century gothic;
+	font-weight: 100;
+	margin: auto;
+	width: 50%;
+	margin-bottom: 1.5vw;
+	padding-bottom: 1vw;
+	border-bottom: 2px solid #444;
+	color: #444;
+}
+.calendrier .journees .journee .match{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.calendrier .journees .journee .match div, .quarts .quarts .journee  div, .demis .demis .journee  div, .finale .finale .journee  div {
+	cursor: pointer;
+	position: relative;
+	animation: ouverture 0.23s ease;
+	background-color: rgba(150,150,200,0.8);
+	margin: 1vw;
+	overflow: hidden;
+	display: inline-flex;
+	justify-content: space-between;
+	width: 45%;
+	border-radius: 1px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 2px;
+}
+.calendrier .journees .journee .match  div h4,.quarts .quarts  .journee div h4, .demis .demis .journee  div h4, .finale .finale .journee  div h4{
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 1vw;
+	color: #111;
+	font-family: calibri;
+	background: orange;
+	width: 100%;
+	background: rgba(250,250,250,0.5);
+	background: rgba(250,250,250,0.1);
+}
+.calendrier .journees .journee .match  div img, .quarts .quarts  .journee div img, .demis .demis .journee  div img, .finale .finale .journee  div img{
+	height:3.5vw;   
+	width:3.2vw;   
+	display: inline-block;
+	vertical-align: middle;
+}
+.vainqueur .vainqueur{
+	width: 80vw;
+	margin: auto;
+	margin-top: 2vw ;
+	//background: rgba(250,242,250,0.2);
+	border-left: 2px dashed white ;
+	border-right: 2px dashed white ;
+	padding: 5vw;
+}
+.vainqueur .vainqueur img{
+	width: 30vw;
+}
+.vainqueur .vainqueur .h1-vainqueur{
+	color: white;
+	font-family: century gothic;
+	font-weight: 100;
+	font-size: 5vw;
+	margin-top: 5vw;
+}
+
+.remerciement .bloc{
+	background: rgba(250,250,250,0.8);
+	width: 80vw;
+	text-align: left;
+	padding: 1.52vw;
+	border-radius: 1vw;
+	box-shadow: 0px 0px 5px #000;
+	margin: 2vw auto;
+}
+.remerciement .bloc .titre2{
+	font-size: 2vw;
+	color: white;
+	font-family: century gothic;
+	text-shadow: 1px 2px 3px black;
+	border-bottom: 2px solid #4a5;
+	padding-bottom: 1vw;
+	display: inline-block;
+	margin-bottom: 2vw;
+	width: 50%;
+}
+.remerciement .bloc p .nom{
+	font-family: calibri;
+	display: inline-block;
+	text-align: center;
+	width: 25vw;
+	padding: 5px;
+	margin: 5px;
+	background: rgba(250,180,10,0.8);
+}
+
+.chargement{
+	overflow: hidden;
+	text-align: right;
+	background: black;
+}
+@keyframes rotation{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes anime{
+	0%{
+		transform: rotate(0deg);
+		left: 0;
+	}
+	30%{
+		left: 45vw;
+	}
+	75%{
+		left: 55vw;	
+	}
+	100%{
+		left: 100vw;
+		//transform: rotate(720deg);
+	}
+}
+
+.chargement .boule{
+	animation: anime 2.5s linear infinite;
+	position: absolute;
+	width: 5px; 
+	height: 5px; 
+	top: 0vh;
+	border-radius: 100px; 
+	display: inline-block;
+	margin: 20vw 0;
+	background: white;
+}
